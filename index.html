@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>График</title>
+</head>
+<body>
+    <style type="text/css">
+    .plot {
+        background: -moz-linear-gradient(#D0ECF4, #5BC9E1, #D0ECF4);
+        background: -webkit-gradient(linear, 0 0, 0  100%, from(#D0ECF4), to(#D0ECF4), color-stop(0.5, #5BC9E1));
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00BBD6', endColorstr='#EBFFFF');
+        padding: 3px 7px;
+        color: #333;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        border: 1px solid #666;
+    }
+    .graph{
+       border:1px solid black;
+       width: 500px;
+       height: 500px;
+    }
+    </style>
+    <form>
+        <table width="100%" cellspacing="0" cellpadding="4">
+            <tr>
+                <td align="right" width="100">From:</td>
+                <td><input name="from" class="from"></td>
+            </tr>
+            <tr>
+                <td align="right">To:</td>
+                <td><input name="to" class="to"></td>
+            </tr>
+            <tr>
+                <td align="right">Fun:</td>
+                <td><input name="fun" class="fun"></td>
+            </tr>
+            <tr>
+                <td align="right" valign="top"></td>
+                <td><button class="plot" type="button">Plot!</button></td>
+            </tr>
+        </table>
+    </form>
+        <div class="graph"></div>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/jquery.flot.js"></script>
+        <script src='index.js'></script>
+</body>
+</html>
